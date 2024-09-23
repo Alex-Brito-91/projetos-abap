@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZDLA01_PE_ELBIMESTRE</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>Z_MODEL_DOBIMESTRE</DOMNAME>
+    <HEADLEN>08</HEADLEN>
+    <SCRLEN1>02</SCRLEN1>
+    <SCRLEN2>04</SCRLEN2>
+    <SCRLEN3>06</SCRLEN3>
+    <DDTEXT>Bimestre - Cadastro Atividades</DDTEXT>
+    <REPTEXT>Bimestre</REPTEXT>
+    <SCRTEXT_S>B.</SCRTEXT_S>
+    <SCRTEXT_M>Bim.</SCRTEXT_M>
+    <SCRTEXT_L>Bimtr.</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>
