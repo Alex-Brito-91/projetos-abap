@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZDLA01GP</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Não se pode salvar registro sem ID!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Não se pode salvar registro sem Título!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Não se pode salvar registro sem Equipe!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Não se pode salvar registro sem Descrição!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Não se pode salvar registro sem Responsável!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Não se pode salvar registro sem Comentário!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Não se pode salvar registro sem Ticket!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Não se pode salvar registro sem Usuário!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Não se pode salvar arquivo sem Binário!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Não se pode salvar arquivo sem Tipo!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDLA01GP</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Não se pode salvar arquivo sem Nome!</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

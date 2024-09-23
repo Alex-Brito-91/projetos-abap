@@ -1,0 +1,6 @@
+@EndUserText.label: 'Controle Acesso - Carrier ID'
+@MappingRole: true
+define role ZI_DLA01_FLIGHT_AC {
+  grant select on ZI_DLA01_FLIGHT
+  where ( CarrierId ) = aspect pfcg_auth( ZATBCARID, ZATBCARRID, ACTVT = '03' );
+}

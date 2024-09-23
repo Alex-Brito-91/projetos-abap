@@ -1,0 +1,6 @@
+@Metadata.layer: #CORE
+annotate view ZI_DLA01_Flight with
+{
+  @EndUserText.label: 'Companhia Aérea'
+  CarrierId;
+}
