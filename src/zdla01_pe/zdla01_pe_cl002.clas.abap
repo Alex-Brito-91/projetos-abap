@@ -19,12 +19,14 @@ CLASS ZDLA01_PE_CL002 IMPLEMENTATION.
 
   METHOD validate.
 
+    can_excecute = abap_true.
+
     DATA(ls_pessoa) = CORRESPONDING zdla01_pe_tbpes( is_data ).
 
-    " Não se pode cadastrar pessoa sem matrícula
-    IF ls_pessoa-matricula IS INITIAL.
-      can_excecute = abap_false.
-    ENDIF.
+    " Não se pode cadastrar pessoa sem id
+*    IF ls_pessoa-id IS INITIAL.
+*      can_excecute = abap_false.
+*    ENDIF.
 
   ENDMETHOD.
 ENDCLASS.

@@ -33,23 +33,26 @@ ENDCLASS.
 
 CLASS zdla01_pe_cl001 IMPLEMENTATION.
 
-
   METHOD create.
 
     GET TIME STAMP FIELD DATA(lv_timestamp).
 
     ASSIGN COMPONENT `ID` OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_id>).
-    ASSIGN COMPONENT `CRIADO_POR` OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_criado_por>).
-    ASSIGN COMPONENT `CRIADO_EM`  OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_criado_em>).
-
     IF <fs_id> IS ASSIGNED.
       <fs_id> = cl_system_uuid=>create_uuid_x16_static( ).
     ENDIF.
 
+    ASSIGN COMPONENT 'DATA_MATRIC' OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_data_matric>).
+    IF <fs_data_matric> IS ASSIGNED.
+      <fs_data_matric> = sy-datum.
+    ENDIF.
+
+    ASSIGN COMPONENT `CRIADO_POR` OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_criado_por>).
     IF <fs_criado_por> IS ASSIGNED.
       <fs_criado_por> = sy-uname.
     ENDIF.
 
+    ASSIGN COMPONENT `CRIADO_EM`  OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_criado_em>).
     IF <fs_criado_por> IS ASSIGNED.
       <fs_criado_em>  = lv_timestamp.
     ENDIF.
@@ -75,6 +78,18 @@ CLASS zdla01_pe_cl001 IMPLEMENTATION.
 
 
   METHOD update.
+
+    GET TIME STAMP FIELD DATA(lv_timestamp).
+
+    ASSIGN COMPONENT `MODIFICADO_POR` OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_modificado_por>).
+    IF <fs_modificado_por> IS ASSIGNED.
+      <fs_modificado_por> = sy-uname.
+    ENDIF.
+
+    ASSIGN COMPONENT `MODIFICADO_EM`  OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_modificado_em>).
+    IF <fs_modificado_em> IS ASSIGNED.
+      <fs_modificado_em>  = lv_timestamp.
+    ENDIF.
 
     CHECK me->validate( is_data ) EQ abap_true.
 

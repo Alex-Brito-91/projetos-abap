@@ -15,7 +15,7 @@
    <TSTCT>
     <SPRSL>E</SPRSL>
     <TCODE>ZDLA01PETBPES</TCODE>
-    <TTEXT>Tabela - Cadastro Pessoa</TTEXT>
+    <TTEXT>Cadastro Pessoa</TTEXT>
    </TSTCT>
    <TSTCP>
     <TCODE>ZDLA01PETBPES</TCODE>
